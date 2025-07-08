@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.logo {
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo-text {
+    line-height: 1.1;
+}
+
+.logo-main {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: black; /* or #FFA500 depending on header background */
+}
+
+.logo-sub {
+    font-size: 0.9em;
+    color: black;
+}
+
+
+
+/* Header */
+header {
+    background-color: #FFA500;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .main-title {
+    font-size: 1.8em;
+    margin: 0;
+    flex: 1;
+    text-align: left;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    color: #fff6e0;
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('../image/chemic2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.hero1 {
+    position: relative;
+    background-image: url('../image/chemic1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero p {
+    margin: 0.5em 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+/* Welcome Section */
+.welcome {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.welcome h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    color: #FFA500;
+}
+
+.welcome h2::before,
+.welcome h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background-color: #FFA500;
+}
+
+.welcome h2::before {
+    left: -80px;
+}
+
+.welcome h2::after {
+    right: -80px;
+}
+
+.welcome p {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Products Section */
+.products {
+    padding: 40px 20px;
+    background: #fff7e6;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    flex: 1 1 300px;
+    max-width: 300px;
+    border-top: 4px solid #FFA500;
+}
+
+.product h3 {
+    color: #FFA500;
+}
+
+/* Footer */
+footer {
+    background-color: #FFA500;
+    color: white;
+    padding: 15px 20px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
